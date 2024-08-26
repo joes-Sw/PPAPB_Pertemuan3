@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#D9D9D9" /> <!-- Warna abu-abu untuk background -->
+            <size android:width="2dp" android:height="2dp" /> <!-- Ukuran thumb -->
+        </shape>
+    </item>
+    <!-- Inner Circle -->
+    <item android:right="8dp" android:left="8dp" android:top="8dp" android:bottom="8dp">
+        <shape android:shape="oval">
+            <solid android:color="#AF47D2" /> <!-- Warna ungu untuk inner circle -->
+            <size android:width="8dp" android:height="8dp" /> <!-- Ukuran inner circle -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/bacground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        app:tint="@color/yellow"
+        android:src="@drawable/chevron_left" />
+
+    <!-- Menu (Three Dots) -->
+    <ImageView
+        android:id="@+id/menu_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        app:tint="@color/yellow"
+        android:src="@drawable/more_vert" />
+
+    <!-- Album Title -->
+    <TextView
+        android:id="@+id/album_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_atas"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Album Cover Image -->
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/album_title"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/image_hero"/>
+
+    <!-- Slider -->
+    <ImageView
+        android:id="@+id/line_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/album_cover"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:id="@+id/dot_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ellipse_1"
+        android:layout_below="@id/line_slider"
+        android:layout_marginTop="-12.5dp"
+        android:layout_marginLeft="50dp" />
+
+    <ImageView
+        android:id="@+id/dot_slider_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ellipse_2"
+        android:layout_below="@id/line_slider"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="55dp" />
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_slider"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/superman"
+        android:textColor="@color/oranye"
+        android:textSize="16sp" />
+
+    <!-- Album Subtitle -->
+    <TextView
+        android:id="@+id/album_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_atas"
+        android:textColor="@color/yellow"
+        android:textSize="20sp" />
+
+    <!-- Play/Pause Button -->
+    <ImageView
+        android:id="@+id/play_pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_subtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ellipse_3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_subtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/icon_play" />
+
+    <!-- Previous Button -->
+    <ImageView
+        android:id="@+id/prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/play_pause_button"
+        android:layout_alignTop="@id/play_pause_button"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        app:tint="@color/white"
+        android:src="@drawable/skip_previous2"/>
+
+    <!-- Next Button -->
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/play_pause_button"
+        android:layout_alignTop="@id/play_pause_button"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        app:tint="@color/white"
+        android:src="@drawable/skip_next_2"/>
+
+</RelativeLayout>
